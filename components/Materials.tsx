@@ -31,7 +31,7 @@ export const Materials: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-background-light dark:bg-background-dark overflow-hidden">
+    <section id="materials" className="scroll-mt-32 py-24 bg-background-light dark:bg-background-dark overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12">
         
         {/* Header with Navigation */}

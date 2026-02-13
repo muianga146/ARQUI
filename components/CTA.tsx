@@ -2,7 +2,7 @@ import React from 'react';
 
 export const CTA: React.FC = () => {
   return (
-    <section className="relative py-32 flex items-center justify-center bg-[#211d11] overflow-hidden text-center">
+    <section id="contact" className="scroll-mt-32 relative py-32 flex items-center justify-center bg-[#211d11] overflow-hidden text-center">
       {/* Pattern Overlay */}
       <div 
         className="absolute inset-0 opacity-20 pointer-events-none"
@@ -18,15 +18,15 @@ export const CTA: React.FC = () => {
         </h2>
         
         <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-          <button className="px-10 py-4 bg-primary text-[#171611] text-lg font-bold uppercase tracking-widest rounded-sm hover:bg-white transition-colors">
+          <a href="mailto:info@muenda.co.mz" className="px-10 py-4 bg-primary text-[#171611] text-lg font-bold uppercase tracking-widest rounded-sm hover:bg-white transition-colors">
             INICIAR PROJETO
-          </button>
+          </a>
           
           <div className="flex flex-col text-left border-l border-white/20 pl-6">
             <span className="text-white/60 text-xs uppercase tracking-widest mb-1">LIGUE DIRETAMENTE</span>
-            <span className="text-white text-lg font-mono hover:text-primary transition-colors cursor-pointer">
+            <a href="tel:+258841234567" className="text-white text-lg font-mono hover:text-primary transition-colors cursor-pointer">
               +258 84 123 4567
-            </span>
+            </a>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { PHILOSOPHY_IMAGE } from '../constants';
 
 export const Philosophy: React.FC = () => {
   return (
-    <section className="py-24 px-6 md:px-12 bg-background-light dark:bg-background-dark relative overflow-hidden">
+    <section id="studio" className="scroll-mt-32 py-24 px-6 md:px-12 bg-background-light dark:bg-background-dark relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           

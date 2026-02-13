@@ -4,11 +4,11 @@ import { HERO_BG_IMAGE } from '../constants';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative h-screen min-h-[700px] w-full flex flex-col items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-screen min-h-[700px] w-full flex flex-col items-center justify-center overflow-hidden">
       {/* Background with slight pulse animation effect */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 transform scale-105 animate-[pulse_10s_ease-in-out_infinite]"
-        style={{ backgroundImage: `url('${HERO_BG_IMAGE}')`, animation: 'none' }} // Disabled pulse for cleaner React implementation, or use CSS keyframes
+        style={{ backgroundImage: `url('${HERO_BG_IMAGE}')`, animation: 'none' }} 
       />
       
       {/* Dark Gradient Overlay */}
@@ -32,21 +32,21 @@ export const Hero: React.FC = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-          <button className="h-14 px-8 bg-primary text-[#171611] rounded-sm text-sm font-bold uppercase tracking-wider hover:bg-[#c9a025] transition-colors flex items-center justify-center gap-2 group">
+          <a href="#projects" className="h-14 px-8 bg-primary text-[#171611] rounded-sm text-sm font-bold uppercase tracking-wider hover:bg-[#c9a025] transition-colors flex items-center justify-center gap-2 group">
             EXPLORAR PROJETOS
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
           
-          <button className="h-14 px-8 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-sm text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-[#171611] transition-all flex items-center justify-center">
+          <a href="#contact" className="h-14 px-8 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-sm text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-[#171611] transition-all flex items-center justify-center">
             MARCAR CONSULTORIA
-          </button>
+          </a>
         </div>
       </div>
       
       {/* Scroll Indicator */}
-      <div className="absolute bottom-10 z-20 animate-bounce text-white/50">
+      <a href="#studio" className="absolute bottom-10 z-20 animate-bounce text-white/50 cursor-pointer hover:text-white transition-colors">
         <ChevronDown className="w-8 h-8" strokeWidth={1} />
-      </div>
+      </a>
     </section>
   );
 };

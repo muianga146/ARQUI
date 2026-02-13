@@ -56,7 +56,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
 export const SelectedWorks: React.FC = () => {
   return (
-    <section className="py-20 px-6 md:px-12 bg-[#f4f3f0] dark:bg-[#1a1814]">
+    <section id="projects" className="scroll-mt-32 py-20 px-6 md:px-12 bg-[#f4f3f0] dark:bg-[#1a1814]">
       <div className="max-w-[1440px] mx-auto flex flex-col gap-12">
         
         {/* Header */}
@@ -65,10 +65,10 @@ export const SelectedWorks: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-light text-[#171611] dark:text-white mb-2">Trabalhos Selecionados</h2>
             <p className="text-cement dark:text-gray-500">Obras-primas Residenciais e Comerciais</p>
           </div>
-          <a href="#" className="text-primary font-bold text-sm uppercase tracking-widest hover:text-[#171611] dark:hover:text-white transition-colors flex items-center gap-2 group">
+          <button onClick={() => window.alert('Galeria completa em breve.')} className="text-primary font-bold text-sm uppercase tracking-widest hover:text-[#171611] dark:hover:text-white transition-colors flex items-center gap-2 group">
             VER PORTFÓLIO COMPLETO 
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
+          </button>
         </div>
 
         {/* Grid */}
